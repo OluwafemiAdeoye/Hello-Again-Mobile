@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Test Suite">
+    <!-- Parallel execution configuration (optional) -->
+    <parameter name="parallel" value="false" />
+    <parameter name="platformName" value="Android" />
+    <parameter name="thread-count" value="5" />
+
+    <!-- Test Configuration -->
+    <test name="Login Tests">
+        <classes>
+            <class name="org.base.tests.LoginTest"/>
+            <!-- Add more classes as needed -->
+        </classes>
+    </test>
+
+    <!-- Another Test Configuration (optional) -->
+<!--    <test name="Another Test Suite">-->
+<!--        <classes>-->
+<!--            <class name="org.base.tests.AnotherTestClass"/>-->
+<!--            &lt;!&ndash; Add more classes as needed &ndash;&gt;-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>

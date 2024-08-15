@@ -1,0 +1,52 @@
+{
+  "LoginTestData": [
+    {
+      "testCase": "Valid login",
+      "phoneNumber": "08990000500",
+      "pin": "8378",
+      "expectedResult": "Login successful"
+    },
+    {
+      "testCase": "Invalid phone number - too short",
+      "phoneNumber": "12345",
+      "pin": "1234",
+      "expectedResult": "Login failed - Invalid phone number"
+    },
+    {
+      "testCase": "Invalid phone number - non-numeric characters",
+      "phoneNumber": "abc1234567",
+      "pin": "1234",
+      "expectedResult": "Login failed - Invalid phone number"
+    },
+    {
+      "testCase": "Invalid pin - too short",
+      "phoneNumber": "1234567890",
+      "pin": "12",
+      "expectedResult": "Login failed - Incorrect pin"
+    },
+    {
+      "testCase": "Invalid pin - non-numeric characters",
+      "phoneNumber": "1234567890",
+      "pin": "abcd",
+      "expectedResult": "Login failed - Incorrect pin"
+    },
+    {
+      "testCase": "Empty phone number",
+      "phoneNumber": "",
+      "pin": "1234",
+      "expectedResult": "Login failed - Phone number is required"
+    },
+    {
+      "testCase": "Empty pin",
+      "phoneNumber": "1234567890",
+      "pin": "",
+      "expectedResult": "Login failed - Pin is required"
+    },
+    {
+      "testCase": "Empty phone number and pin",
+      "phoneNumber": "",
+      "pin": "",
+      "expectedResult": "Login failed - Phone number and pin are required"
+    }
+  ]
+}
